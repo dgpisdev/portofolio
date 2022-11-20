@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+
+/* scrollbar start */
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #198754;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #212529;
+}
+
+/*header start*/
+
+header {
+  background-color: #212529;
+}
+
+.logo {
+  font-family: "Share Tech Mono", serif;
+  text-transform: none;
+  font-size: 4em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo-text {
+  color: #198754;
+}
+
+.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+header a:hover {
+  color: #198754;
+}
+
+header a::after {
+  content: " | ";
+  color: #198754;
+}
+
+#contact-none::after {
+  content: none;
+}
+
+/*about me start*/
+
+#about {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #212529;
+}
+
+.about {
+  display: flex;
+  flex-flow: row;
+  border-left: 15px solid #198754;
+  box-shadow: 10px 10px 5px;
+}
+
+#image-user {
+  width: inherit;
+  background-color: #198754;
+  box-shadow: 10px 10px 5px;
+  padding: 2%;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#image-user:hover {
+  scale: 1.03;
+}
+
+.about-me {
+  width: inherit;
+  color: #212529;
+  font-weight: bold;
+}
+
+.cite-author {
+  width: inherit;
+  float: right;
+  font-style: italic;
+  font-weight: bold;
+  color: #212529;
+}
+
+.about-text {
+  justify-content: center;
+}
+
+/*skills start*/
+
+.skills p {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #212529;
+}
+
+.my-skills {
+  display: flex;
+}
+
+.progress {
+  display: inline;
+  width: 75%;
+}
+
+.skills .fa-brands {
+  width: 3em;
+  font-size: 5em;
+  text-align: center;
+  border: 5px solid #212529;
+  border-radius: 10px;
+}
+
+/*my projects start*/
+
+#projects {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #212529;
+}
+
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.card-button {
+  font-size: 1em;
+  border: none;
+}
+
+.card {
+  box-shadow: 10px 10px 5px;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  color: #212529;
+}
+
+/*contact start*/
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #212529;
+}
+
+.contact-form {
+  width: 50%;
+}
+
+.contact-form label {
+  color: #212529;
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+.form-label::after {
+  content: " *";
+  color: #f00;
+}
+
+#message-output-red {
+  color: #f00;
+  font-weight: bolder;
+}
+
+#message-output-green {
+  color: #198754;
+  font-weight: bold;
+}
+
+/*footer start*/
+
+footer {
+  background-color: #212529;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #198754;
+}
+
+.footer-button {
+  font-size: 2em;
+  border: none;
+}
+
+#author {
+  font-weight: bold;
+  color: #fff;
+}
+
+/*media queries*/
+
+@media only screen and (max-width: 800px) {
+  .contact-form {
+    width: 80%;
+  }
+  .email-image {
+    display: none;
+  }
+  footer .footer-button {
+    font-size: 1.5em;
+  }
+  .about {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
